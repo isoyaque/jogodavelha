@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(imagens/casa-de-repouso-colorida-01.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.linha1,
+.linha2,
+.linha3 {
+    display: flex;
+}
+
+.quadrado {
+    height: 10vw;
+    width: 10vw;
+    background-color: rgb(211, 211, 211);
+    margin: .2rem;
+    font-size: 9vw;
+    text-align: center;
+    justify-items: center;
+    border-radius: 10px;
+    border: .5vh solid white;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 1vw;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1),
+        0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+.tabuleiro {
+    margin: auto;
+    width: 40vw;
+    justify-content: center;
+    display: grid;
+}
+
+button {
+    border: none;
+    display: flex;
+    background-color: rgb(144, 238, 255);
+    padding: 1rem 3rem;
+    margin: 1vh auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 0px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 0px 2px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 0px 2px rgba(0,0,0,0.75);
+    transition: .3S;
+
+}
+
+button:active {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    transform: translate(4px,4px);
+                
+}
+
+#vencedor {
+    opacity: 0;
+    cursor: default;
+    transition: .5s;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+        0px 0px 5px rgba(255, 255, 255, 1),
+        0px 0px 5px rgba(255, 255, 255, 1),
+        0px 0px 5px rgba(255, 255, 255, 1),
+        0px 0px 5px rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .quadrado {
+        height: 30vw;
+        width: auto;
+        aspect-ratio: 1 / 1;
+        background-color: red;
+        margin: .1rem;
+        border: 1vw solid white;
+    }
+
+    .tabuleiro {
+        width: auto;
+    }
+
+    h1 {
+        margin: 2rem;
+    }
+
+
+
+}

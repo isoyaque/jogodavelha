@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Jogo da velha</h1>
+    <div class="tabuleiro">
+        <div class="linha1">
+            <div class="quadrado" data-linha="1" data-coluna="1"></div>
+            <div class="quadrado" data-linha="1" data-coluna="2"></div>
+            <div class="quadrado" data-linha="1" data-coluna="3"></div>
+        </div>
+        <div class="linha2">
+            <div class="quadrado" data-linha="2" data-coluna="1"></div>
+            <div class="quadrado" data-linha="2" data-coluna="2"></div>
+            <div class="quadrado" data-linha="2" data-coluna="3"></div>
+        </div>
+        <div class="linha3">
+            <div class="quadrado" data-linha="3" data-coluna="1"></div>
+            <div class="quadrado" data-linha="3" data-coluna="2"></div>
+            <div class="quadrado" data-linha="3" data-coluna="3"></div>
+        </div>
+    </div>  
+
+    <h2 id="vencedor">Ganhou</h2>
+    <button onclick="recomeçar()"> Recomeçar</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
