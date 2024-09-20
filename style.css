@@ -96,9 +96,11 @@ button:active {
         height: 30vw;
         width: auto;
         aspect-ratio: 1 / 1;
-        background-color: red;
         margin: .1rem;
         border: 1vw solid white;
+        font-size: 25vw;
+        justify-content: center;
+        display: grid;
     }
 
     .tabuleiro {
